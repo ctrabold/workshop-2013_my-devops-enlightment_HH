@@ -95,14 +95,10 @@ on 27nd November for the first Devops Meetup Hamburg.
 Luckily we had two talks and lots of ideas borrowed from the recent
 Berlin Devops Meetup http://www.meetup.com/blndevops/events/88114652/.
 
-The agenda was as follows
-
-TODO ct 2012-11-29 Insert AGENDA
-
 The plan was to introduce ourselves without an classic (boring) introduction round.
 
 Instead I planned to get to know each other in a 'fishbowl', an open disscussion
-over voted topics. TODO ct 2012-11-29 LINK
+over voted topics.
 
 This turned the meetup into a nice vibrant discussion where everybody
 was involved activly or non activly by just listening.
@@ -133,9 +129,9 @@ The heat is on in Hamburg :)
 
 ## Attendees
 
-Total 28+
-Customer 3
-TW 3
+- Total 28+
+- Customer 3
+- TW 3
 
 
 ## Pizza
