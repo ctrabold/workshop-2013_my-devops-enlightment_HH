@@ -1,0 +1,12 @@
+{
+  "name": "Devops - Lessons learned",
+  "description": "Lessons I learned in two years devopsifing my life",
+  "sections": [
+    { "section" : "intro" },
+    { "section" : "why" },
+    { "section" : "lessons_learned" },
+    { "section" : "subprojects" },
+    { "section" : "challenge" },
+    { "section" : "thank_you" }
+  ]
+}
