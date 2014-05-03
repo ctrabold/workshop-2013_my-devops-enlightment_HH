@@ -141,6 +141,7 @@ OK und mehr als genug. Wir hatten 5 Pizzen zu viel
 
 ## Fishbowl Topics
 
+<pre>
 * Continuous Deployment            12
 * Monitoring tools                 11
 ---
@@ -148,7 +149,7 @@ OK und mehr als genug. Wir hatten 5 Pizzen zu viel
 * Infrastruktur testen             8
 * Configuration Management Tools   6
 * How to change company culture?   5
-
+</pre>
 
 ### New ideas
 
