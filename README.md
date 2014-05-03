@@ -172,5 +172,5 @@ gutes Meetup
 
 ## TODOs
 
-* Meetup @devopshh mit MeetUp-Seite verlinken?
+* [@devopshh](https://twitter.com/devopshh) mit MeetUp-Seite verlinken?
 
