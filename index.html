@@ -1,0 +1,229 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Devops - Lessons learned</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"/>
+
+  <link rel="stylesheet" href=".//css/reset.css" type="text/css"/>
+
+  <link type="text/css" href=".//css/fg.menu.css" media="screen" rel="stylesheet" />
+  <link type="text/css" href=".//css/theme/ui.all.css" media="screen" rel="stylesheet" />
+  <link type="text/css" href=".//css/sh_style.css" rel="stylesheet" />
+  <link type="text/css" href=".//css/tipsy.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href=".//css/showoff.css" type="text/css"/>
+
+  <script type="text/javascript" src=".//js/jquery-1.4.2.min.js"></script>
+  <script type="text/javascript" src=".//js/jquery.cycle.all.js"></script>
+	<script type="text/javascript" src=".//js/jquery-print.js"></script>
+  <script type="text/javascript" src=".//js/jquery.batchImageLoad.js"></script>
+  <script type="text/javascript" src=".//js/jquery.parsequery.min.js"></script>
+  <script type="text/javascript" src=".//js/jquery.doubletap-0.1.js"></script>
+  <script type="text/javascript" src=".//js/jquery.tipsy.js"></script>
+
+  <script type="text/javascript" src=".//js/fg.menu.js"></script>
+  <script type="text/javascript" src=".//js/showoff.js"></script>
+  <script type="text/javascript" src=".//js/jTypeWriter.js"> </script>
+  <script type="text/javascript" src=".//js/sh_main.min.js"></script>
+  <script type="text/javascript" src=".//js/core.js"></script>
+  <script type="text/javascript" src=".//js/showoffcore.js"></script>
+  <script type="text/javascript" src=".//js/coffee-script.js"></script>
+
+  
+    
+  
+
+  
+    
+    <link rel="stylesheet" href=".//file/style.css" type="text/css"/>
+  
+
+  
+
+  <script type="text/javascript">
+  $(function(){
+      setupPreso(false, './');
+  });
+  </script>
+
+</head>
+
+<body>
+
+<a tabindex="0" href="#search-engines" class="fg-button fg-button-icon-right ui-widget ui-state-default ui-corner-all" id="navmenu"><span class="ui-icon ui-icon-triangle-1-s"></span>slides</a>
+<div id="navigation" class="hidden"></div>
+<a tabindex="1" href="#search-engines" class="fg-button fg-button-icon-right ui-widget ui-state-default ui-corner-all" id="stylemenu"><span class="ui-icon ui-icon-triangle-1-s"></span>styles</a>
+<div id="stylepicker" class="hidden"></div>
+
+
+<div id="help">
+  <table>
+    <tr><td class="key">z, ?</td><td>toggle help (this)</td></tr>
+    <tr><td class="key">space, &rarr;</td><td>next slide</td></tr>
+    <tr><td class="key">shift-space, &larr;</td><td>previous slide</td></tr>
+    <tr><td class="key">d</td><td>toggle debug mode</td></tr>
+    <tr><td class="key">## &lt;ret&gt;</td><td>go to slide #</td></tr>
+    <tr><td class="key">c, t</td><td>table of contents (vi)</td></tr>
+    <tr><td class="key">f</td><td>toggle footer</td></tr>
+    <tr><td class="key">g</td><td>toggle follow</td></tr>
+    <tr><td class="key">r</td><td>reload slides</td></tr>
+    <tr><td class="key">n</td><td>toggle notes</td></tr>
+    <tr><td class="key">p</td><td>run preshow</td></tr>
+    <tr><td class="key">P</td><td>toggle pause</td></tr>
+    <tr><td class="key">s</td><td>choose style</td></tr>
+  </table>
+</div>
+
+<div class="buttonNav">
+  <input type="submit" onClick="prevStep();" value="prev"/>
+  <input type="submit" onClick="nextStep();" value="next"/>
+</div>
+
+<div id="preso"><center>loading presentation...</center></div>
+<div id="footer">
+  <span id="followMode"></span>
+  <span id="slideInfo"></span>
+  <span id="debugInfo"></span>
+  <span id="notesInfo"></span>
+  <span id="slideFilename"></span>
+  <img id="disconnected" src="/css/disconnected.png" />
+</div>
+
+<div id="slides" class="offscreen" style="display:none;">
+<div id="intro/01_slide" class="slide center" data-transition="none"><div class="content center" ref="intro/01_slide/1">
+<p><img src="./file/intro/devops_meetup_hamburg.png" alt="Devops Meetup Hamburg"/></p></div>
+</div><div id="intro/01_slide" class="slide front center" data-transition="none"><div class="content front center" ref="intro/01_slide/2">
+<h1>Devops years</h1>
+
+<h2>Personal notes devopsifying my life</h2>
+
+<h2>Christian Trabold</h2>
+
+<h2>2012-11-27</h2></div>
+</div><div id="why/01_slide" class="slide new-chapter center" data-transition="none"><div class="content new-chapter center" ref="why/01_slide/1">
+<h1>Devops</h1></div>
+</div><div id="why/01_slide" class="slide new-chapter center" data-transition="none"><div class="content new-chapter center" ref="why/01_slide/2">
+<h1>THE THING</h1>
+
+<div class="notes">
+
+<p>In my opinion every passionate develper (already) has some Devops spice intus.</p>
+
+</div></div>
+</div><div id="why/01_slide" class="slide " data-transition="none"><div class="content " ref="why/01_slide/3">
+<h1>Why?</h1></div>
+</div><div id="why/01_slide" class="slide " data-transition="none"><div class="content " ref="why/01_slide/4">
+<h1>History</h1></div>
+</div><div id="why/01_slide" class="slide center-fixed-top" data-transition="none"><div class="content center-fixed-top" ref="why/01_slide/5">
+<p><img src="./file/why/lazy_panda.jpg" alt="lazy panda"/></p></div>
+</div><div id="why/01_slide" class="slide center-fixed-top" data-transition="none"><div class="content center-fixed-top" ref="why/01_slide/6">
+<p><img src="./file/why/time_to_think.jpg" alt="Desert Dunes"/></p></div>
+</div><div id="why/01_slide" class="slide " data-transition="none"><div class="content " ref="why/01_slide/7">
+<h1>Normal developer</h1>
+
+<h2>Unhappy to wait for my MySQL-Database AGAIN</h2>
+
+<p>unhappy I had to wait for a sysadmin to install a database
+had no clue how it works
+wanted to know how to do it on my own to speed up process</p></div>
+</div><div id="why/01_slide" class="slide " data-transition="none"><div class="content " ref="why/01_slide/8">
+<h1>Painful slow process</h1></div>
+</div><div id="lessons_learned/01_slide" class="slide new-chapter center" data-transition="none"><div class="content new-chapter center" ref="lessons_learned/01_slide/1">
+<h1>just start</h1></div>
+</div><div id="lessons_learned/01_slide" class="slide new-chapter center" data-transition="none"><div class="content new-chapter center" ref="lessons_learned/01_slide/2">
+<h2>you know you are doing</h2>
+
+<h1>the right thing</h1>
+
+<h2>if it makes common sense</h2></div>
+</div><div id="lessons_learned/01_slide" class="slide new-chapter center" data-transition="none"><div class="content new-chapter center" ref="lessons_learned/01_slide/3">
+<h2>focus on the</h2>
+
+<h1>biggest</h1>
+
+<h2>issues</h2></div>
+</div><div id="lessons_learned/01_slide" class="slide new-chapter center" data-transition="none"><div class="content new-chapter center" ref="lessons_learned/01_slide/4">
+<h1>change NOTHING</h1></div>
+</div><div id="lessons_learned/01_slide" class="slide new-chapter center" data-transition="none"><div class="content new-chapter center" ref="lessons_learned/01_slide/5">
+<h2>but</h2>
+
+<h1>automate the process</h1></div>
+</div><div id="lessons_learned/01_slide" class="slide " data-transition="none"><div class="content " ref="lessons_learned/01_slide/6">
+<h1>Example</h1>
+
+<h2>replace legacy scripts with chef on every server</h2></div>
+</div><div id="lessons_learned/01_slide" class="slide " data-transition="none"><div class="content " ref="lessons_learned/01_slide/7">
+<h1>Prove that you gain speed without changing the status quo</h1></div>
+</div><div id="subprojects/01_slide" class="slide new-chapter center" data-transition="none"><div class="content new-chapter center" ref="subprojects/01_slide/1">
+<h1>Tools that helped me</h1></div>
+</div><div id="subprojects/01_slide" class="slide " data-transition="none"><div class="content " ref="subprojects/01_slide/2">
+<h1>Configuration management</h1>
+
+<div class="notes">
+
+<p>I could not attach any reason for that 3 years ago.</p>
+
+</div>
+
+<p>Now I'm a big fan of chef, like playing withs puppets (again) and I know that CFengine drives servers, not cars.</p></div>
+</div><div id="subprojects/01_slide" class="slide " data-transition="none"><div class="content " ref="subprojects/01_slide/3">
+<h1>Chef</h1>
+
+<h2>Write cookbooks, help testing them</h2></div>
+</div><div id="subprojects/01_slide" class="slide " data-transition="none"><div class="content " ref="subprojects/01_slide/4">
+<h1>Vagrant</h1>
+
+<h2>Production env on dev  machine</h2></div>
+</div><div id="subprojects/01_slide" class="slide " data-transition="none"><div class="content " ref="subprojects/01_slide/5">
+<h1>Cucumber</h1>
+
+<h2>If my boss understands the tests&#x2026;</h2>
+
+<div class="notes">
+
+<p>The point is that it is easier to participate in english than in 'code'</p>
+
+</div></div>
+</div><div id="challenge/01_slide" class="slide new-chapter center" data-transition="none"><div class="content new-chapter center" ref="challenge/01_slide/1">
+<h1>Challenge</h1></div>
+</div><div id="challenge/01_slide" class="slide " data-transition="none"><div class="content " ref="challenge/01_slide/2">
+<h1>Devops = Passion</h1>
+
+<h2><em>I want to know more than my code</em></h2></div>
+</div><div id="challenge/01_slide" class="slide " data-transition="none"><div class="content " ref="challenge/01_slide/3">
+<h1>Passion = Culture</h1></div>
+</div><div id="challenge/01_slide" class="slide " data-transition="none"><div class="content " ref="challenge/01_slide/4">
+<h1>Culture is hard to change</h1>
+
+<h2>requires decent amount of <em>impatience</em>
+</h2></div>
+</div><div id="challenge/01_slide" class="slide " data-transition="none"><div class="content " ref="challenge/01_slide/5">
+<h1>Painful: Different assumption of passion at work</h1>
+
+<h2>Convincing others is a huge task</h2>
+
+<div class="notes">
+
+<p>Who 'just go to work' and who does what he loves?</p>
+
+</div></div>
+</div><div id="challenge/01_slide" class="slide new-chapter center" data-transition="none"><div class="content new-chapter center" ref="challenge/01_slide/6">
+<h1>Will unpassionate IT will have a future?</h1></div>
+</div><div id="thank_you/01_slide" class="slide new-chapter center" data-transition="none"><div class="content new-chapter center" ref="thank_you/01_slide/1">
+<h1>Questions?</h1></div>
+</div><div id="thank_you/01_slide" class="slide " data-transition="none"><div class="content " ref="thank_you/01_slide/2">
+<h1>Thanks!</h1>
+
+<p><a href="http://twitter.com/ctrabold">@ctrabold</a><br><a href="http://christian-trabold.de">http://christian-trabold.de</a></br></p>
+</div>
+</div></div>
+<div id="pauseScreen">
+  PAUSED
+</div>
+
+</body>
+</html>
